@@ -1,7 +1,7 @@
 name = 'Air'
 license = 'MIT'
 licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Hugo air theme'
+description = 'Hugo Air Theme'
 
 # The home page of the theme, where the source can be found
 homepage = 'https://github.com/francoiducat/hugo-air'
@@ -11,9 +11,9 @@ demosite = 'https://yeulocation.ducatillon.net'
 
 # Taxonomy terms
 tags = ['blog', 'company', 'website']
-features = ['responsive', 'images gallery', 'google maps', 'shortcodes']
+features = ['responsive', 'images gallery', 'google maps', 'bootstrap', 'shortcodes']
 
 # If the theme has a single author
 [author]
-  name = 'francoisducat'
+  name = 'francoiducat'
   homepage = 'https://notes.ducatillon.net'
