@@ -3,8 +3,13 @@
 =                   CSS Variables                     =
 =======================================================
 */
+
+/* 
+Main color for the website
+It can be overridden in the config file by setting "Params.mainColor" to any color value
+*/
 :root {
-  --ocean-blue: #035c8c;
+  --main-color: #038c4a; /* default color */
 }
 
 /*
@@ -25,11 +30,11 @@
 h1,
 h2,
 h3 {
-  color: var(--ocean-blue);
+  color: var(--main-color);
 }
 
 a {
-  color: var(--ocean-blue);
+  color: var(--main-color);
   text-decoration: none;
 
 }
@@ -48,16 +53,16 @@ p {
   text-align: center;
 }
 
-.bg-ocean-blue {
-  background-color: var(--ocean-blue);
+.bg-main-color {
+  background-color: var(--main-color);
 }
 
-.ocean-blue {
-  color: var(--ocean-blue);
+.main-color {
+  color: var(--main-color);
 }
 
-.btn.ocean-blue {
-  background-color: var(--ocean-blue);
+.btn.main-color {
+  background-color: var(--main-color);
   color: #fff;
 }
 
@@ -87,7 +92,7 @@ p {
 .navbar-brand:focus,
 .navbar-brand:hover,
 .nav-link:hover {
-  color: var(--ocean-blue);
+  color: var(--main-color);
 }
 
 .navbar-toggler,
@@ -109,7 +114,7 @@ p {
 
 @media (min-width: 992px) {
   .navbar ul li a:hover {
-    border-top: 5px solid var(--ocean-blue);
+    border-top: 5px solid var(--main-color);
     border-bottom: 5px solid transparent;
   }
 }
@@ -184,9 +189,16 @@ p {
 .image-zoom-wrapper {
   position: relative;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
+}
 
+/* Wrapper for the image to ensure the zoom effect is contained */
+.image-zoom-wrapper-top {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
 }
 
 /* Apply zoom effect on hover */
@@ -196,17 +208,7 @@ p {
   /* Ensure the image fills the container */
   height: 100%;
   /* Ensure the image maintains its aspect ratio */
-  border-radius: 5px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
-}
-
-/* Wrapper for the image to ensure the zoom effect is contained */
-.image-zoom-wrapper-top {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
-
+  border-radius:3px;
 }
 
 /* Apply zoom effect on hover */
@@ -216,8 +218,7 @@ p {
   /* Ensure the image fills the container */
   height: 100%;
   /* Ensure the image maintains its aspect ratio */
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
+  border-radius: 3px 3px 0px 0px;
 }
 
 
