@@ -1,0 +1,47 @@
+baseURL: https://hugoairtheme.com/
+languageCode: en-us
+title: Hugo Air Theme
+params:
+  author:
+    name: François
+    siteUrl: https://notes.ducatillon.net/
+  gmaps_url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11366.74599502234!2d3.0287327197210505!3d50.638482433767564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32a823d1a46b3%3A0xc89ec4ef3911f9ff!2sCitadelle%20de%20Lille!5e0!3m2!1sen!2sfr!4v1742036346403!5m2!1sen!2sfr
+  mainColor: "#035c8c"
+  footer: "Hugo Air Theme is a great responsive theme!"
+  scripts:
+    bootstrap: |
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" async></script>
+    imageloaded: |
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js" async></script>
+    masonry: |
+     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    lightbox: |
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js" async></script>
+menu:
+  main:
+  - name: Home 
+    url: /
+    weight: 20
+    params:
+      target: 
+  - name: FAQ
+    url: /pages/faq
+    weight: 50
+    params:
+      target: 
+  footer:
+  - name: FAQ
+    url: /pages/faq
+    weight: 20
+    params:
+      target: 
+  - name: Legal Notice
+    url: /pages/legal-notice
+    weight: 30
+    params:
+      target: 
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

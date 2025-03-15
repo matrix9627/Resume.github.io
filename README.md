@@ -33,7 +33,7 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 Inside the folder of your Hugo site run:
 
 ```
-$ git submodule add https://github.com/francoiducat/air.git themes/air
+$ git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ```
 
 ## Usage
