@@ -9,9 +9,8 @@ params:
 
 # Instagram Gallery inserted with shortcode
 
-
-Add this block `{{` `< gallery-insta page="post-3" >` `}}` in your `md` file to display your instagram image gallery
-
+✅ Add images to your page bundle.  
+✅ Add this block `{{` `< gallery-insta page="post-3" >` `}}` in your `md` file to display your instagram image gallery.
 
 {{< gallery-insta page="post-3" >}}
 

@@ -9,10 +9,10 @@
 
   {{ block "main" . }}{{ end }}
 
-  {{ with .Site.Params.gmaps_url }}
-    {{ partial "embedgmaps.html" . }}
+  {{ if and .Site.Params.gmaps_url .Params.gmaps }}
+    {{ partial "embedgmaps.html" .Site.Params.gmaps_url }}
   {{ end }}
-  
+
   {{ partial "footer.html" . }}
 
 </body>

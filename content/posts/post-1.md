@@ -5,6 +5,7 @@ draft = false
 tags = ['red']
 params.catchline = "This post has a default card and header image"
 params.button = "Read More..."
+gmaps = true
 +++
 
 # Heading h1

@@ -14,7 +14,7 @@ params:
 
 ## Usage
 
-```html
+```yaml
 ---
 title: Image Gallery
 type: gallery-masonry

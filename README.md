@@ -43,7 +43,7 @@ git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ### Edit your config file
 
 
-```yml
+```yaml
 baseURL: https://hugo-air-theme.com/
 languageCode: en-us
 title: Hugo Air Theme
@@ -69,6 +69,12 @@ menu:
   - name: Welcome
     url: /pages/welcome-page
     weight: 20
+    params:
+      target: 
+  footer:
+  - name: Legal Notice
+    url: /pages/legal-notice
+    weight: 30
     params:
       target: 
 ```
@@ -114,7 +120,7 @@ params:
 #### Use as partial
 In your `.md` file, specify the type of the page with `type: gallery-masonry` or  `type: gallery-insta` like this:
 
-```md
+```yaml
 ---
 title: Air is a great hugo theme
 type: gallery-masonry
@@ -126,15 +132,16 @@ Air is a great hugo theme with outstanding features like image gallery from page
 
 Assuming your folder structure would look something like this
 
-```md
+```yaml
 content/
 └── pages/
     └── my-page/                # Page Bundle
         ├── index.md            # Page content
         ├── featured-image.jpg  # Image Resource used as gallery image 1
-        ├── photo1.jpg          # Image Resource used as gallery image 2
-        ├── photo2.jpg          # Image Resource used as gallery image 3
-        └── photo3.jpg          # Image Resource used as gallery image 4
+        ├── card.jpg            # Image Resource used as gallery image 2 AND as card featured image
+        ├── photo1.jpg          # Image Resource used as gallery image 3
+        ├── photo2.jpg          # Image Resource used as gallery image 4
+        └── photo3.jpg          # Image Resource used as gallery image 5
 ```
 
 In your `.md` file, add this block to display your instagram image gallery
