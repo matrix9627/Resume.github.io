@@ -5,10 +5,10 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 ## Screenshot
 
  ### Mobile
-![screenshot](static/img/hugo-air-theme-mobile.jpg)
+![screenshot](/img/hugo-air-theme-mobile.jpg)
  
  ### Desktop
-![screenshot](static/img/hugo-air-theme-desktop.jpg)
+![screenshot](/img/hugo-air-theme-desktop.jpg)
 
 ## Demo
 
@@ -32,9 +32,11 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 
 Inside the folder of your Hugo site run:
 
+```bash
+git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ```
-$ git submodule add https://github.com/francoiducat/hugo-air.git themes/air
-```
+
+
 
 ## Usage
 
@@ -43,7 +45,7 @@ $ git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 
 ```yml
 baseURL: https://hugo-air-theme.com/
-languageCode: fr-fr
+languageCode: en-us
 title: Hugo Air Theme
 theme: air
 params:
@@ -104,18 +106,18 @@ In your config file, add:
 
 ```yaml
 params:
-  gmaps_url: https://www.google.com/maps/d/u/0/embed?mid=1UySq5HRbcRKL90dKuFpX6PRRtx0&ehbc=2E312F
+  gmaps_url: https://tinyurl.com/mr3uesbx
 ```
 
 ### Image Gallery
 
 #### Use as partial
-In your `.md` file, specify the type of the page with `type: gallery` like this:
+In your `.md` file, specify the type of the page with `type: gallery-masonry` or  `type: gallery-insta` like this:
 
 ```md
 ---
 title: Air is a great hugo theme
-type: gallery
+type: gallery-masonry
 ---
 Air is a great hugo theme with outstanding features like image gallery from page bundle
 ```
@@ -124,7 +126,7 @@ Air is a great hugo theme with outstanding features like image gallery from page
 
 Assuming your folder structure would look something like this
 
-```
+```md
 content/
 └── pages/
     └── my-page/                # Page Bundle
@@ -133,23 +135,20 @@ content/
         ├── photo1.jpg          # Image Resource used as gallery image 2
         ├── photo2.jpg          # Image Resource used as gallery image 3
         └── photo3.jpg          # Image Resource used as gallery image 4
-````
-
-In your `.md` file, include this block for a masonry gallery style:
-
-```html
-{{< gallery-masonry page="my-page">}}
 ```
+
+In your `.md` file, add this block to display your instagram image gallery
+
+`{{` `< gallery-masonry page="my-page" >` `}}` 
+
 
 where "my-page" is the page bundle object passed as a variable to the shortcode
 
 Alternatively, use instagram gallery style with
-```html
-{{< gallery-insta page="my-page">}}
-```
 
+`{{` `< gallery-insta page="my-page" >` `}}`
 
-### Featured image
+### Custom Header image
 
 Add one image called `featured-image.jpg` in your page bundle.
 
@@ -161,5 +160,9 @@ Automatically loaded from the `static/img` folder.
 - `header-960.jpg` for screens higher than 960px
 - `header-480.jpg` for screens lower than 960px
 
+### Custom Boostrap Card image
+
 #### Use as featured card image in `list.html`
-When listing pages, it displays boostrap cards with thumbnail image.
+When listing pages/posts, it displays boostrap cards with a thumbnail image.  
+By default it uses the card image from  `static/img/card.jpg`
+Customize the card image by adding one image called `featured-image.jpg` or `card.jpg ` in your page bundle.  

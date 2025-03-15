@@ -5,7 +5,7 @@ params:
   author:
     name: François
     siteUrl: https://notes.ducatillon.net/
-  gmaps_url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11366.74599502234!2d3.0287327197210505!3d50.638482433767564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32a823d1a46b3%3A0xc89ec4ef3911f9ff!2sCitadelle%20de%20Lille!5e0!3m2!1sen!2sfr!4v1742036346403!5m2!1sen!2sfr
+  gmaps_url: https://tinyurl.com/mr3uesbx
   mainColor: "#035c8c"
   footer: "Hugo Air Theme is a great responsive theme!"
   scripts:
@@ -24,14 +24,19 @@ menu:
     weight: 20
     params:
       target: 
-  - name: FAQ
-    url: /pages/faq
-    weight: 50
+  - name: Blog 
+    url: /posts
+    weight: 30
+    params:
+      target: 
+  - name: Gallery
+    url: /pages/gallery
+    weight: 40
     params:
       target: 
   footer:
-  - name: FAQ
-    url: /pages/faq
+  - name: Gallery
+    url: /pages/gallery
     weight: 20
     params:
       target: 

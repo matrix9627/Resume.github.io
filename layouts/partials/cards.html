@@ -10,13 +10,15 @@
     <div class="card h-100" style="width: 18rem;">
 
       <a href="{{ .RelPermalink }}">
-        {{ with .Resources.Get "featured-image.jpg" }}
+        {{ with .Resources.Get "featured-image.jpg" | or (.Resources.Get "card.jpg") }}
         {{ $image := .Resize "400x"}}
         <div class="image-zoom-wrapper-top">
           <img src="{{ $image.RelPermalink }}" class="card-img-top zoom-image-top" alt="{{ .Title }}">
         </div>
         {{ else }}
-        <p>{{ .Title }}</p>
+        <div class="image-zoom-wrapper-top">
+          <img src="/img/card.jpg" class="card-img-top zoom-image-top" alt="{{ .Title }}">
+        </div>
         {{ end }}
       </a>
       <div class="card-body">
@@ -24,7 +26,12 @@
           <h5 class="card-title main-color">{{ .Title }}</h5>
         </a>
         <p class="card-text catchline">{{ .Params.catchline }}</p>
-        <a href="{{ .RelPermalink }}" class="btn main-color">Je veux la voir 😍</a>
+        <a href="{{ .RelPermalink }}" class="btn main-color">
+          {{ with .Params.button }}
+          {{ . }}
+          {{ else }}
+          {{ .Title }}
+          {{ end }}</a>
       </div>
 
     </div>

@@ -201,7 +201,7 @@ p {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
 }
 
-/* Apply zoom effect on hover */
+/* Zoom effect */
 .zoom-image {
   transition: transform 0.3s ease-in-out;
   width: 100%;
@@ -211,7 +211,7 @@ p {
   border-radius:3px;
 }
 
-/* Apply zoom effect on hover */
+/* Zoom effect */
 .zoom-image-top {
   transition: transform 0.3s ease-in-out;
   width: 100%;
@@ -222,8 +222,7 @@ p {
 }
 
 
-/* Zoom effect */
-.image-zoom-wrapper-top:hover .zoom-image-top,
+/* Apply zoom effect on hover */.image-zoom-wrapper-top:hover .zoom-image-top,
 .image-zoom-wrapper:hover .zoom-image {
   transform: scale(1.1);
   /* Scale the image up by 20% on hover */
