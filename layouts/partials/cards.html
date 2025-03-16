@@ -17,7 +17,7 @@
         </div>
         {{ else }}
         <div class="image-zoom-wrapper-top">
-          <img src="/img/card.jpg" class="card-img-top zoom-image-top" alt="{{ .Title }}">
+          <img src="{{ "img/card.jpg" | relURL }}" class="card-img-top zoom-image-top" alt="{{ .Title }}">
         </div>
         {{ end }}
       </a>
