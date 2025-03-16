@@ -12,7 +12,11 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 
 ## Demo
 
+## Live Demo
 [DEMO SITE](https://yeulocation.ducatillon.net/)
+
+## Local Demo
+Clone this repo and run `hugo serve` command
 
 ## Features
 
@@ -36,12 +40,9 @@ Inside the folder of your Hugo site run:
 git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ```
 
-
-
 ## Usage
 
 ### Edit your config file
-
 
 ```yaml
 baseURL: https://hugo-air-theme.com/

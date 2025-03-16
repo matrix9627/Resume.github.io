@@ -19,7 +19,11 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 
 ## Demo
 
+## Live Demo
 [DEMO SITE](https://yeulocation.ducatillon.net/)
+
+## Local Demo
+Clone this repo and run `hugo serve` command
 
 ## Features
 
@@ -43,12 +47,9 @@ Inside the folder of your Hugo site run:
 git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ```
 
-
-
 ## Usage
 
 ### Edit your config file
-
 
 ```yaml
 baseURL: https://hugo-air-theme.com/
@@ -144,7 +145,7 @@ content/
 └── pages/
     └── my-page/                # Page Bundle
         ├── index.md            # Page content
-        ├── featured-image.jpg  # Image Resource used as gallery image 1 AND as header featured image
+        ├── featured-image.jpg  # Image Resource used as gallery image 1
         ├── card.jpg            # Image Resource used as gallery image 2 AND as card featured image
         ├── photo1.jpg          # Image Resource used as gallery image 3
         ├── photo2.jpg          # Image Resource used as gallery image 4
@@ -161,7 +162,6 @@ where "my-page" is the page bundle object passed as a variable to the shortcode
 Alternatively, use instagram gallery style with
 
 `{{` `< gallery-insta page="my-page" >` `}}`
-
 
 ### Custom Header image
 
