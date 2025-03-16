@@ -13,7 +13,7 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 ## Demo
 
 ## Live Demo
-[DEMO SITE](https://yeulocation.ducatillon.net/)
+[DEMO SITE](https://francoiducat.github.io/hugo-air/)
 
 ## Local Demo
 Clone this repo and run `hugo serve` command
