@@ -12,10 +12,12 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 ## Screenshot
 
  ### Mobile
-![screenshot](/img/hugo-air-theme-mobile.jpg)
+{{< img "img/hugo-air-theme-mobile.jpg" "Screenshot of mobile version" >}}
+
  
  ### Desktop
-![screenshot](/img/hugo-air-theme-desktop.jpg)
+{{< img "img/hugo-air-theme-desktop.jpg" "Screenshot of mobile version" >}}
+
 
 ## Demo
 

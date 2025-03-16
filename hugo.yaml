@@ -1,4 +1,4 @@
-baseURL: https://francoiducat.github.io/hugo-air/
+baseURL: http://localhost:1313/hugo-air/
 languageCode: en-us
 title: Hugo Air Theme
 params:
