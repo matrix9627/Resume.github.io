@@ -37,3 +37,4 @@ config.json~
 
 .env
 .DS_Store
+static/.DS_Store
