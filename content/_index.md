@@ -35,7 +35,7 @@ Clone this repo and run `hugo serve` command
 - Customizable main color
 - Responsive Embeded Google Maps
 - Responsive Header Image from page bundle
-- Image Gallery from page bundle available as **shortcode** or template page. (instagram or masonry style)
+- Image Gallery from page bundle available as **shortcode** or template **page**. (instagram or masonry style)
 - Smooobu shortcode
 
 
@@ -54,7 +54,7 @@ git submodule add https://github.com/francoiducat/hugo-air.git themes/air
 ### Edit your config file
 
 ```yaml
-baseURL: https://hugo-air-theme.com/
+baseURL: https://francoiducat.github.io/hugo-air/
 languageCode: en-us
 title: Hugo Air Theme
 theme: air
@@ -65,26 +65,22 @@ params:
   gmaps_url: https://www.google.com/maps/d/u/0/embed?mid=1UySq5HRbcRKL90dKuFpX6PRRtx0&ehbc=2E312F
   mainColor: "#386641"
   footer: "Hugo Air theme is great and customizable"
-  scripts:
-    bootstrap: |
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" async></script>
-    imageloaded: |
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js" async></script>
-    masonry: |
-     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    lightbox: |
-      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js" async></script>
 menu:
   main:
-  - name: Welcome
-    url: /pages/welcome-page
+  - name: Home 
+    url: /
     weight: 20
     params:
       target: 
-  footer:
-  - name: Legal Notice
-    url: /pages/legal-notice
+  - name: Features 
+    url: /features
     weight: 30
+    params:
+      target: 
+  footer:
+  - name: Features 
+    url: /features
+    weight: 20
     params:
       target: 
 ```

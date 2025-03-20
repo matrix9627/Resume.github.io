@@ -8,13 +8,6 @@ params:
   gmaps_url: https://tinyurl.com/mr3uesbx
   mainColor: "#035c8c"
   footer: "Hugo Air Theme is a great responsive theme!"
-  scripts:
-    bootstrap: |
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" async></script>
-    masonry: |
-     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    fancybox: |
-      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" async></script>
 menu:
   main:
   - name: Home 

@@ -1,5 +1,5 @@
 +++
-title = 'Default Header'
+title = 'Default Header/Card'
 date = 2023-01-15T09:00:00-07:00
 draft = false
 tags = ['red']
@@ -8,20 +8,24 @@ params.button = "Read More..."
 gmaps = true
 +++
 
-# Features
+# Custom Header image
 
-✨ Automatic Resize of header image (960px for large screens, 480 for smaller screens)  
-✨ Default header image (static/img/header-960.jpg)  
-✨ Custom header image from page bundle (featured-image.jpg)  
+Add one image called `featured-image.jpg` in your page bundle.
 
-# Usage 
+## Use as a featured header image in `single.html`
+Automatically loaded as a header image on your page
 
-Just make sure to have:
+### Use the default featured header image
+Automatically loaded from the `static/img` folder.
+- `header-960.jpg` for screens higher than 960px
+- `header-480.jpg` for screens lower than 960px
 
-- `static/img/header-960.jpg` for large screens
-- `static/img/header-480.jpg` for smaller screens
+# Custom Boostrap Card image
 
-You can use this bash command to resize your image `sips -Z 960 header-960.jpg`
+## Use as featured card image in `list.html`
+When listing pages/posts, it displays boostrap cards with a thumbnail image.  
+By default it uses the card image from  `static/img/card.jpg`
+Customize the card image by adding one image called `featured-image.jpg` or `card.jpg ` in your page bundle.  
 
 # Heading h1
 

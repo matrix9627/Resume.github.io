@@ -10,8 +10,8 @@ params:
 # Image Gallery inserted with shortcode
 
 ✅ Add images to your page bundle.  
-✅ Add this block `{{` `< gallery-insta page="shortcode-gallery" >` `}}` in your `md` file to display your instagram image gallery.
-✅ Add this block `{{` `< gallery-masonry page="shortcode-gallery" >` `}}` in your `md` file to display your masonry image gallery.
+✅ Add this block `{{` `< gallery-insta page="shortcode-gallery" >` `}}` in your `md` file to display your instagram image gallery.  
+✅ Add this block `{{` `< gallery-masonry page="shortcode-gallery" >` `}}` in your `md` file to display your masonry image gallery.  
 
 
 {{< gallery-masonry page="shortcode-gallery" >}}

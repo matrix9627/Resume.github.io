@@ -11,7 +11,7 @@ params:
 ✨ Image gallery rendered from page bundle  
 ✨ Images are resized with [Hugo Resize function](https://gohugo.io/content-management/image-processing/#resize)  
 ✨ Masonry grid layout is [recalculated once all images are loaded to prevent any display issues](https://github.com/francoiducat/hugo-air/blob/main/layouts/partials/gallery-masonry.html)  
-✨ FancyBox effect on click 
+✨ FancyBox effect on click  
 ✨ [Zoom effect on hover](https://github.com/francoiducat/hugo-air/blob/main/assets/sass/main.scss)
 
 ## Usage
