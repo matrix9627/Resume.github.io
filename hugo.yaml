@@ -15,8 +15,8 @@ params:
       <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js" async></script>
     masonry: |
      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-    lightbox: |
-      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js" async></script>
+    fancybox: |
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" async></script>
 menu:
   main:
   - name: Home 
@@ -24,27 +24,27 @@ menu:
     weight: 20
     params:
       target: 
-  - name: Blog 
-    url: /posts
+  - name: Features 
+    url: /features
     weight: 30
     params:
       target: 
   - name: Gallery
-    url: /pages/gallery
+    url: /features/gallery-page-type
     weight: 40
     params:
       target: 
   footer:
-  - name: Gallery
-    url: /pages/gallery
+  - name: Features 
+    url: /features
     weight: 20
     params:
       target: 
-  - name: Legal Notice
-    url: /pages/legal-notice
+  - name: Gallery
+    url: /features/gallery-page-type
     weight: 30
     params:
-      target: 
+      target:
 
 markup:
   goldmark:

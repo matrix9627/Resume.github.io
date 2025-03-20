@@ -20,7 +20,7 @@
   {{- end -}}
 
   <div class="col-6 col-md-4 col-xl-3 pb-3 px-2">
-    <a href="{{ $image.RelPermalink }}" class="lightbox-toggle" data-gallery="yeu-gallery">
+    <a href="{{ $image.RelPermalink }}" data-fancybox="gallery">
       <div class="image-zoom-wrapper">
         <img src="{{ $img_tmb.RelPermalink }}" alt="Gallery Image" class="img-fluid zoom-image"
           width="{{ $img_tmb.Width }}" height="{{ $img_tmb.Height }}">

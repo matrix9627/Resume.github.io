@@ -1,4 +1,4 @@
-<div class="row pt-2 mb-5" data-masonry='{"percentPosition": true}'>
+<div class="row" data-masonry='{"percentPosition": true}'>
   {{ $images := .Resources.ByType "image" }}
   {{ range $images }}
 
@@ -9,8 +9,8 @@
     <div class="card-columns">
       <div class="card-container">
         <div class="card no-border image-zoom-wrapper">
-          <a href="{{ $image.RelPermalink }}" class="lightbox-toggle"
-            data-gallery="yeu-gallery">
+          <a href="{{ $image.RelPermalink }}"
+            data-fancybox="gallery">
             <img class="card-img zoom-image" src="{{ $img_tmb.RelPermalink }}" alt="Gallery">
           </a>
         </div>

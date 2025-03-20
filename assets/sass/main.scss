@@ -9,18 +9,22 @@ Main color for the website
 It can be overridden in the config file by setting "Params.mainColor" to any color value
 */
 :root {
-  --main-color: #035c8c; /* default color */
+  --main-color: #035c8c;
+  /* default color */
 }
 
 /*
 =======================================================
-=                   HTML elements                     =
+*                   HTML elements                     *
 =======================================================
 */
+
+body {
+  margin-top: 0;
+}
+
 @media (min-width: 992px) {
   body {
-    padding-top: 64px;
-    /* Make space for navbar */
     background-color: #fff;
     font-family: "Roboto", serif;
     color: #565555;
@@ -36,7 +40,6 @@ h3 {
 a {
   color: var(--main-color);
   text-decoration: none;
-
 }
 
 p {
@@ -45,7 +48,7 @@ p {
 
 /*
 =======================================================
-=                   Custom Styles                     =
+*                   Custom Styles                     *
 =======================================================
 */
 
@@ -81,18 +84,63 @@ p {
 
 /*
 =======================================================
-=                Navbar, Menu Links                   =
+*                Navbar, Menu Links                   *
 =======================================================
 */
 
+
 .navbar {
   --bs-navbar-padding-y: 0rem;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+  transition: color 0.3s ease;
+}
+
+// Optional: Ensure links stay white even when active or hovered
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.active {
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+  }
+
+  .navbar-nav {
+    align-items: flex-end;
+    text-align: right;
+  }
 }
 
 .navbar-brand:focus,
 .navbar-brand:hover,
 .nav-link:hover {
-  color: var(--main-color);
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 .navbar-toggler,
@@ -114,7 +162,7 @@ p {
 
 @media (min-width: 992px) {
   .navbar ul li a:hover {
-    border-top: 5px solid var(--main-color);
+    border-top: 5px solid #fff;
     border-bottom: 5px solid transparent;
   }
 }
@@ -134,18 +182,13 @@ p {
 
 .headerImage {
   background-size: cover;
-  min-height: 30vh;
+  min-height: 50vh;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
-}
-
-@media (min-width: 640px) {
-  .headerImage {
-    min-height: 50vh;
-  }
+  z-index: 1;
 }
 
 .headerImage .loader {
@@ -208,7 +251,7 @@ p {
   /* Ensure the image fills the container */
   height: 100%;
   /* Ensure the image maintains its aspect ratio */
-  border-radius:3px;
+  border-radius: 3px;
 }
 
 /* Zoom effect */
@@ -222,7 +265,8 @@ p {
 }
 
 
-/* Apply zoom effect on hover */.image-zoom-wrapper-top:hover .zoom-image-top,
+/* Apply zoom effect on hover */
+.image-zoom-wrapper-top:hover .zoom-image-top,
 .image-zoom-wrapper:hover .zoom-image {
   transform: scale(1.1);
   /* Scale the image up by 20% on hover */
