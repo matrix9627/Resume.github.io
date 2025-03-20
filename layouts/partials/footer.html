@@ -47,8 +47,5 @@
 <!-- Masonry JS -->
 {{ .Site.Params.scripts.masonry | safeHTML }}
 
-<!-- Lightbox JS -->
-{{ .Site.Params.scripts.lightbox | safeHTML }}
-
-<!-- Override Lightbox options -->
-<script src="{{ "js/lightbox-options.js" | relURL }}"></script>
+<!-- FancyBox JS -->
+{{ .Site.Params.scripts.fancybox | safeHTML }}
