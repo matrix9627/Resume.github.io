@@ -7,11 +7,11 @@ description = 'Hugo Air Theme'
 homepage = 'https://github.com/francoiducat/hugo-air'
 
 # If you have a running demo of the theme
-demosite = 'https://yeulocation.ducatillon.net'
+demosite = 'https://francoiducat.github.io/hugo-air'
 
 # Taxonomy terms
-tags = ['blog', 'company', 'website']
-features = ['responsive', 'images gallery', 'google maps', 'bootstrap', 'shortcodes']
+tags = ['blog', 'company', 'website', 'portfolio']
+features = ['responsive', 'images gallery', 'page bundle gallery', 'masonry image gallery', 'instagram image gallery', 'google maps', 'bootstrap', 'shortcodes']
 
 # If the theme has a single author
 [author]

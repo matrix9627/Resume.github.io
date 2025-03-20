@@ -5,10 +5,10 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 ## Screenshot
 
  ### Mobile
-![screenshot](static/img/hugo-air-theme-mobile.jpg)
+![screenshot]([static/img/hugo-air-theme-mobile.jpg](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-mobile.jpg))
  
  ### Desktop
-![screenshot](static/img/hugo-air-theme-desktop.jpg)
+![screenshot]([static/img/hugo-air-theme-desktop.jpg](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-desktop.jpg))
 
 ## Demo
 
