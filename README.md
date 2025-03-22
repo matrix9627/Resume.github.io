@@ -4,17 +4,16 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 
 ## Demo
 
-| LIVE DEMO                                                 	|   	| \| 	|   	| LOCAL DEMO                                     	|
-|-----------------------------------------------------------	|---	|----	|---	|------------------------------------------------	|
-| [francoiducat.github.io/hugo-air](https://francoiducat.github.io/hugo-air) 	|   	| \| 	|   	| Clone this repo and run  `hugo serve`  command 	|
-
+| LIVE DEMO                                                 	|   	| LOCAL DEMO                                     	|
+|-----------------------------------------------------------	|---	|------------------------------------------------	|
+| [francoiducat.github.io/hugo-air](https://francoiducat.github.io/hugo-air) 	|   	| Clone this repo and run  `hugo serve`  command 	|
 
 ## Features
-|                	|   	|                                 	|   	|                                  	|
-|----------------	|---	|---------------------------------	|---	|----------------------------------	|
-| ✨ **Responsive**   	|   	| ✨ **Bootstrap** ready               	|   	| ✨ **Image Gallery** from page bundle 	|
-| ✨ Accessible   	|   	| ✨ Embeded Google Maps           	|   	| ✨ **Single-page** landing homepage   	|
-| ✨ Customizable 	|   	| ✨ **Custom Header Image** from page bundle 	|   	| ✨ Smooobu Booking **shortcode**      	|
+|      Awesome Features          	|                                            	|                                      	|
+|------------------	|--------------------------------------------	|--------------------------------------	|
+| ✨ **Responsive** 	| ✨ **Bootstrap** ready                      	| ✨ **Image Gallery** from page bundle 	|
+| ✨ Accessible     	| ✨ Embeded Google Maps                      	| ✨ **Single-page** landing homepage   	|
+| ✨ Customizable   	| ✨ **Custom Header Image** from page bundle 	| ✨ Smooobu Booking **shortcode**      	|
 
 ## Installation
 
