@@ -2,33 +2,19 @@
 
 The intent of this theme is to provide a solid starting place for Hugo sites with basic features and include best practices for performance, accessibility, and rapid development.
 
-## Screenshot
-
- ### Mobile
-![screenshot](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-mobile.jpg)
- 
- ### Desktop
-![screenshot](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-desktop.jpg)
-
 ## Demo
 
-## Live Demo
-[DEMO SITE](https://francoiducat.github.io/hugo-air/)
+| LIVE DEMO                                                 	|   	| \| 	|   	| LOCAL DEMO                                     	|
+|-----------------------------------------------------------	|---	|----	|---	|------------------------------------------------	|
+| [francoiducat.github.io/hugo-air](https://francoiducat.github.io/hugo-air) 	|   	| \| 	|   	| Clone this repo and run  `hugo serve`  command 	|
 
-## Local Demo
-Clone this repo and run `hugo serve` command
 
 ## Features
-
-- Responsive
-- Single-page landing homepage
-- Accessible
-- Boostrap
-- Customizable main color
-- Responsive Embeded Google Maps
-- Responsive Header Image from page bundle
-- Image Gallery from page bundle available as **shortcode** or template page. (instagram or masonry style)
-- Smooobu shortcode
+|                	|   	|                                 	|   	|                                  	|
+|----------------	|---	|---------------------------------	|---	|----------------------------------	|
+| ✨ **Responsive**   	|   	| ✨ **Bootstrap** ready               	|   	| ✨ **Image Gallery** from page bundle 	|
+| ✨ Accessible   	|   	| ✨ Embeded Google Maps           	|   	| ✨ **Single-page** landing homepage   	|
+| ✨ Customizable 	|   	| ✨ **Custom Header Image** from page bundle 	|   	| ✨ Smooobu Booking **shortcode**      	|
 
 ## Installation
 
@@ -215,3 +201,11 @@ weight: 10
 ---
 Content of Page 1
 ```
+
+## Screenshot
+
+ ### Mobile
+![screenshot](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-mobile.jpg)
+ 
+ ### Desktop
+![screenshot](https://francoiducat.github.io/hugo-air/img/hugo-air-theme-desktop.jpg)

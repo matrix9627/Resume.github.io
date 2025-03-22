@@ -9,34 +9,19 @@ gmaps: true
 
 The intent of this theme is to provide a solid starting place for Hugo sites with basic features and include best practices for performance, accessibility, and rapid development.
 
-## Screenshot
-
- ### Mobile
-{{< img "img/hugo-air-theme-mobile.jpg" "Screenshot of mobile version" >}}
-
- 
- ### Desktop
-{{< img "img/hugo-air-theme-desktop.jpg" "Screenshot of mobile version" >}}
-
-
 ## Demo
 
-## Live Demo
-[DEMO SITE](https://francoiducat.github.io/hugo-air/)
+| LIVE DEMO                                                 	|   	| \| 	|   	| LOCAL DEMO                                     	|
+|-----------------------------------------------------------	|---	|----	|---	|------------------------------------------------	|
+| [francoiducat.github.io/hugo-air](https://francoiducat.github.io/hugo-air) 	|   	| \| 	|   	| Clone this repo and run  `hugo serve`  command 	|
 
-## Local Demo
-Clone this repo and run `hugo serve` command
 
 ## Features
-
-- Responsive
-- Accessible
-- Boostrap
-- Customizable main color
-- Responsive Embeded Google Maps
-- Responsive Header Image from page bundle
-- Image Gallery from page bundle available as **shortcode** or template **page**. (instagram or masonry style)
-- Smooobu shortcode
+|                	|   	|                                 	|   	|                                  	|
+|----------------	|---	|---------------------------------	|---	|----------------------------------	|
+| ✨ **Responsive**   	|   	| ✨ **Bootstrap** ready               	|   	| ✨ **Image Gallery** from page bundle 	|
+| ✨ Accessible   	|   	| ✨ Embeded Google Maps           	|   	| ✨ **Single-page** landing homepage   	|
+| ✨ Customizable 	|   	| ✨ **Custom Header Image** from page bundle 	|   	| ✨ Smooobu Booking **shortcode**      	|
 
 
 ## Installation
@@ -179,3 +164,50 @@ Automatically loaded from the `static/img` folder.
 When listing pages/posts, it displays boostrap cards with a thumbnail image.  
 By default it uses the card image from  `static/img/card.jpg`
 Customize the card image by adding one image called `featured-image.jpg` or `card.jpg ` in your page bundle.  
+
+### Single-page landing homepage
+
+Add pages to a folder. These page will render as a single-page.
+
+Example with this page bundle:
+
+```yaml
+content/
+└── landing-page/
+    └── page-1/                 # Page Bundle
+        ├── featured-image.jpg  # 
+        ├── index.md            # Page 1
+    ├── _index.md               # File that calls the landing-page type
+    ├── page-2.md               # Page 2
+    ├── page-3.md               # Page 3
+    ├── page-4.md               # Page 4
+    └── page-5.md               # Page 5
+```
+
+Edit your  `content/landing-page/_index.md` to add `type: landing-page`
+
+```yaml 
+---
+title: Landing Page
+catchline: Awesome One Page Landing Page
+type: landing-page
+---
+```
+
+Add a weight to each page to render them by weight ✨: 
+
+```yaml
+---
+title: Page 1
+weight: 10
+---
+Content of Page 1
+```
+
+## Screenshot
+
+ ### Mobile
+{{< img "img/hugo-air-theme-mobile.jpg" "Screenshot of mobile version" >}}
+ 
+ ### Desktop
+{{< img "img/hugo-air-theme-desktop.jpg" "Screenshot of mobile version" >}}
