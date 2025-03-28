@@ -8,6 +8,11 @@ params:
   gmaps_url: https://tinyurl.com/mr3uesbx
   mainColor: "#035c8c"
   footer: "Hugo Air Theme is a great responsive theme!"
+
+services:
+  googleAnalytics:
+    id: "G-123456789"
+
 menu:
   main:
   - name: Home 
