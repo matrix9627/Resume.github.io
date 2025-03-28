@@ -11,7 +11,7 @@ params:
 
 services:
   googleAnalytics:
-    id: "G-123456789"
+  id: G-MKFPZMY2YP  #Replace with your Google Analytics ID
 
 menu:
   main:

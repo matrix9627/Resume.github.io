@@ -103,6 +103,16 @@ params:
   gmaps_url: https://tinyurl.com/mr3uesbx
 ```
 
+### Setup Google Analytics 
+
+In your config file, add:
+
+```yaml
+services:
+  googleAnalytics:
+  id: G-12345  #Replace with your Google Analytics ID
+```
+
 ### Image Gallery
 
 #### Use as partial
