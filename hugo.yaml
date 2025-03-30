@@ -11,7 +11,7 @@ params:
 
 services:
   googleAnalytics:
-  id: G-MKFPZMY2YP  #Replace with your Google Analytics ID
+    id: G-MKFPZMY2YP
 
 menu:
   main:
@@ -64,3 +64,8 @@ markup:
         block: true
     renderer:
       unsafe: true
+
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: false
