@@ -40,6 +40,7 @@ The intent of this theme is to provide a solid starting place for Hugo sites wit
 | ✨ **Single-page** landing homepage   	                                         |
 | ✨ Embeded Google Maps                      	                                   |
 | ✨ Smooobu Booking **shortcode**      	                                         |
+| ✨ **Multilingual** Support shortcode      	                                   |
 {class="table"} 
 
 ## Installation
